@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+
+}
+
+.wrapper{
+    height: 100vh;
+    width: 100%;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;    
+}
+.name h1{
+    font-size: 2.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.logo{
+    height: 315px;
+    width: 315px;
+    background-image: url(../../misc/logga@mobile.png);
+    background-position: center;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.knapp{
+    margin-right: 10px;
+    font-size: 1.5rem;
+    border-bottom: 2px solid black;
+}
+.productsmenu{
+    font-size: 1.2rem;
+    display: none;
+    flex-direction: column;
+    border-bottom: 2px solid black;
+    padding: 10px;
+    width: 100%;
+    margin-left: -10px;
+}
+.aboutusmenu{
+    width: 100%;
+    font-size: 1.2rem;
+    display: none;
+    flex-direction: column;
+    border-bottom: 2px solid black;
+    padding: 7px;
+    margin-left: -10px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+}
+.menuactivate{
+    display: flex;
+}
