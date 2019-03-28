@@ -60,6 +60,20 @@ nav a{
     color: black;
     border-bottom: 1px solid black;
 }
+.cartlink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.cartlink a{
+    padding: 0;
+    border: none;
+}
+.cartlink .material-icons{
+    font-size: 2rem;
+    
+}
 .menuactivate{
     display: flex;
 }
@@ -98,27 +112,77 @@ main{
 .productbox{
     width: 40%;
     height: 200px;
-    border: 2px solid black;
-    margin: 10px;
     display: flex;
+    flex-direction: column;
+    align-content: center;
+    /* border: 2px solid black;
+    margin: 10px;
     align-items: flex-end;
     background-size: 50px;
     background-repeat: no-repeat;
     background-position: top;
     font-size: 0.7rem;
-
-    background-image: url(../img/first_yeeter@W150pxH220px.png);
+    
+    background-image: url(../img/first_yeeter@W150pxH220px.png); */
 }
 .buybutton{
     padding: 2px;
     font-size: 1rem;
     margin-bottom: 5px;
-
+    font-weight: bold;
     background-color: orange;
     border-radius: 10%;
     color: white;
-    border: 1px solid ;
-        
+    border: 1px solid black;
+}
 
-
+.productpagemain{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.productname{
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    font-size: 2rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.productimage{
+    height: 300px;
+    width: 80%;
+    background-image: url(../img/first_yeeter.png);
+    background-size: 80% 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid black;
+}
+.mobile{
+    height: 220px;
+    background-size: 150px 220px;
+    width: 150px;
+}
+.pricecontainer{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    justify-content: space-between;
+}
+.productprice{
+    font-size: 2rem;
+}
+.buybutton.medium{
+    font-size: 2rem;
+}
+.productdescription{
+    margin-top: 15px;
+    width: 80%;
+    font-size: 0.9rem;
+    
+}
+.productprice.small{
+    font-size: 1rem;
 }
