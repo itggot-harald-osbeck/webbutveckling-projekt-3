@@ -11,3 +11,6 @@ function aboutus(){
     let productsmenu = document.querySelector(".productsmenu") 
     productsmenu.classList.remove("menuactivate")
 }
+function buypopup(){
+    alert("Sorry, that doesn't work right now!")
+}

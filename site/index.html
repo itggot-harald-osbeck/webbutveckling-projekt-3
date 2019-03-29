@@ -12,7 +12,7 @@
 <body>
     <div class="wrapper">
         <header>
-            <div class="name"><h1>The Yeet Company</h1></div>
+            <a href="index.html" class="name">The Yeet Company</a> 
             <div class="logo"></div>
         </header>
         <nav>
@@ -25,7 +25,7 @@
                     About Us ▼
                 </div>
                 <div class="cartlink">
-                    <a href="">
+                    <a href="shoppingcart.html">
                         <i class="material-icons">
                             shopping_cart
                         </i>
@@ -34,7 +34,7 @@
                 
             </div>
             <div class="productsmenu">
-                <a href="">All Products</a>
+                <a href="productlist.html">All Products</a>
                 <a href="">Complete Packages</a>
                 <a href="">Yeets</a>
                 <a href="">Help Books</a>
@@ -47,7 +47,7 @@
             </div>
             <div class="searchbar">
                 <input type="text" placeholder="What are you looking for?" class="search">
-                <button type="submit" class="searchbutton" >
+                <button type="submit" class="searchbutton" onclick="buypopup()" >
                     <i class="material-icons">
                         search
                     </i>
@@ -56,23 +56,66 @@
         </nav>
         <main>
             <div class="productbox">
-                <div class="productimage mobile">
-
+                <a href="productpage.html" class="productimage frontpage">
+                </a>
+                <div class="productdesc">
+                    The OG Yeet
                 </div>
-                <div class="pricecontainer">
-                        <div class="productprice small">
-                            400:-
-                        </div>
-                        <div class="buybutton">
-                            BUY
-                        </div>
+                <div class="pricecontainer frontpage">
+                    <div class="productprice small">
+                        400:-
                     </div>
-        
+                    <button class ="buybutton" onclick="buypopup()">
+                        BUY
+                    </button>
+                </div>
             </div>
-            <div class="productbox"></div>
-            <div class="productbox"></div>
-            <div class="productbox"></div>
-            <div class="productbox"></div>
+            <div class="productbox">
+                <a href="productpage.html" class="productimage frontpage">
+                </a>
+                <div class="productdesc">
+                    The OG Yeet
+                </div>
+                <div class="pricecontainer frontpage">
+                    <div class="productprice small">
+                        400:-
+                    </div>
+                    <button class ="buybutton" onclick="buypopup()">
+                        BUY
+                    </button>
+                </div>
+            </div>
+            <div class="productbox">
+                <a href="productpage.html" class="productimage frontpage">
+                </a>
+                <div class="productdesc">
+                    The OG Yeet
+                </div>
+                <div class="pricecontainer frontpage">
+                    <div class="productprice small">
+                        400:-
+                    </div>
+                    <button class ="buybutton" onclick="buypopup()">
+                        BUY
+                    </button>
+                </div>
+            </div>
+            <div class="productbox">
+                <a href="productpage.html" class="productimage frontpage">
+                </a>
+                <div class="productdesc">
+                    The OG Yeet
+                </div>
+                <div class="pricecontainer frontpage">
+                    <div class="productprice small">
+                        400:-
+                    </div>
+                    <button class ="buybutton" onclick="buypopup()">
+                        BUY
+                    </button>
+                </div>
+            </div>
+            
         </main>
         
         <script src="js/main.js"></script>
