@@ -25,7 +25,7 @@ header a{
 .logo{
     height: 375px;
     width: 100%;
-    background-image: url(../../misc/logga@mobile.png);
+    background-image: url(../img/logo@W750pxH375px.png);
     background-position: center;
 }
 nav{
@@ -225,10 +225,135 @@ main{
     padding-bottom: 50px;
 }
 .cartmain{
-
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .cartheader{
     margin: 20px 0 18px 0;
     font-size: 2rem;
     font-weight: bold;
 }
+.carttext{
+    width: 80%;
+    opacity: 0.8;
+}
+.cartcheckout{
+    position: fixed;
+    top: 80%;
+    color: white;
+    border-radius: 15px;
+    font-weight: bold; 
+    padding: 10px;
+    font-size: 3rem;
+    background-color: orange;
+    border: 2px solid black;
+    box-shadow: 2px;
+}
+.productstitle{
+    display: none;
+}
+.aboutustitle{
+    display: none;
+}
+.cartlink:nth-child(2){
+    display: none;
+}
+.menutitle{
+    display: none;
+}
+@media only screen  and (min-width : 1224px) {
+    .wrapper{
+        display: grid;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: 20% 80%;
+        grid-template-areas: "nav header"
+        "nav site";
+    }
+    header{
+        grid-area: header;
+        border: none;
+    }
+    .logo{
+        background-image: url(../img/logo@W2000pxH1000px.png);
+        background-size: 1000px 500px;
+        background-repeat: no-repeat;
+    }
+    nav{
+        grid-area: nav;
+        border: 2px solid black;
+        display: grid;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+        grid-template-columns: 100%;
+        grid-template-areas: "menu"
+        "products"
+        "search"
+        "aboutus"
+        "cart"
+    }
+    .menus{
+        display: none;
+    }
+    .productstitle{
+        grid-area: products;
+        display: block;
+        padding: 10px;
+        padding-left: 20px;
+        font-size: 1.3rem;
+    }
+    .aboutustitle{
+        grid-area: aboutus;
+        display: block;
+        padding: 10px;
+        padding-left: 20px;
+        font-size: 1.3rem;
+    }
+    .cartlink:nth-child(2){
+        display: block;
+        grid-area: cart;
+        padding: 10px;
+        padding-left: 20px;
+        font-size: 1.3rem;
+        
+    }
+    .cartlink a{
+        margin: 0;
+    }
+    .knapp{
+        grid-area: search;
+        
+    }
+    .productsmenu{
+        grid-area: products;
+        border: none;
+        display: flex;
+        padding-top: 40px;
+        padding-left: 40px;
+    }
+    .aboutusmenu{
+        grid-area: aboutus;
+        border: none;
+        display: flex;
+        padding-top: 40px;
+        padding-left: 40px;
+        
+    }
+    .menutitle{
+        display: block;
+        grid-area: menu;
+        font-size: 2rem;
+        padding: 20px;
+        padding-top: 50px;
+        font-weight: bold;
+    }
+    nav a{
+        border: none;
+    }
+    .searchbar{
+        grid-area: search;
+    }
+    main{
+        grid-area: site;
+    }
+}
+    
