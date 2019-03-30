@@ -18,6 +18,7 @@
             <div class="menus">
                 <div class="knapp" onclick="products()">
                     Products ▼
+                    
                 </div>
                 <div class="knapp" onclick="aboutus()">
                     About Us ▼
@@ -25,11 +26,28 @@
                 <div class="cartlink">
                     <a href="shoppingcart.html">
                         <i class="material-icons">
-                            shopping_cart
+                            shopping_cart</i>
                         </i>
                     </a>
                 </div>
+            </div>
+            <div class="cartlink">
+                <a href="shoppingcart.html">
+                    Shopping cart &nbsp;
+                    <i class="material-icons">
+                        shopping_cart
+                    </i>
+                </a>
+            </div>
+            <div class="menutitle">
+                Menu
+            </div>
+            <div class="productstitle">
+                Products ▼
                 
+            </div>
+            <div class="aboutustitle">
+                About Us ▼
             </div>
             <div class="productsmenu">
                 <a href="productlist.html">All Products</a>
@@ -40,18 +58,29 @@
                 <a href="about.html">Our Story</a>
                 <a href="about2.html">Our Mission</a>
             </div>
+            <div class="searchbar">
+                <input type="text" placeholder="What are you looking for?" class="search">
+                <button type="submit" class="searchbutton" onclick="buypopup()" >
+                    <i class="material-icons">
+                        search
+                    </i>
+                </button>
+            </div>
         </nav>
         <div class="cartmain">
-            <div class="cartheader">
-                Your Items
-            </div>
-            <div class="carttext">
-                It looks like you haven't added any items to your cart!
+            <div class="cartcontainer">
+                <div class="cartheader">
+                    Your Items
+                </div>
+                <div class="carttext">
+                    It looks like you haven't added any items to your cart!
+                    
+                </div>
+                <button class ="cartcheckout" onclick="buypopup()">
+                    Checkout
+                </button>
                 
             </div>
-            <button class ="cartcheckout" onclick="buypopup()">
-                Checkout
-            </button>
         </div>
         
         <script src="js/main.js"></script>

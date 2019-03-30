@@ -123,14 +123,6 @@ main{
     justify-content: center;
     margin: 10px;
     flex-direction: column;
-    /* border: 2px solid black;
-    align-items: flex-end;
-    background-size: 50px;
-    background-repeat: no-repeat;
-    background-position: top;
-    font-size: 0.7rem;
-    
-    background-image: url(../img/first_yeeter@W150pxH220px.png); */
 }
 .buybutton{
     padding: 2px;
@@ -159,7 +151,7 @@ main{
     background-color: white;
     height: 300px;
     width: 80%;
-    background-image: url(../img/first_yeeter.png);
+    background-image: url(../img/first_yeeter@W500pxH840px.png);
     background-size: 80% 300px;
     background-repeat: no-repeat;
     background-position: center;
@@ -211,7 +203,7 @@ main{
 .abouttext{
     width: 80%;
     display: flex;
-    justify-content: center;
+
     flex-direction: column;
     
 }
@@ -262,7 +254,15 @@ main{
 .menutitle{
     display: none;
 }
+.cartcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 @media only screen  and (min-width : 1224px) {
+    body{
+        height: 200vh;
+    }
     .wrapper{
         display: grid;
         grid-template-columns: 20% 80%;
@@ -274,12 +274,16 @@ main{
         grid-area: header;
         border: none;
     }
+    header a{
+        font-size: 4rem;
+    }
     .logo{
         background-image: url(../img/logo@W2000pxH1000px.png);
         background-size: 1000px 500px;
         background-repeat: no-repeat;
     }
     nav{
+        height: 100%;
         grid-area: nav;
         border: 2px solid black;
         display: grid;
@@ -354,6 +358,53 @@ main{
     }
     main{
         grid-area: site;
+        margin-top: 40%;
     }
-}
-    
+    .productbox{
+        margin: 20px;
+        width: 200px;
+    }
+    .productimage{
+    }
+    .productimage.frontpage{
+        height: 250px;
+        background-image: url(../img/first_yeeter@W500pxH840px.png);
+        background-size: 200 340px;
+    }
+    .productdesc{
+        font-size: 1.5rem;
+    }
+    .productprice.small{
+        font-size: 1.5rem;
+    }
+    .buybutton{
+        font-size: 1.5rem;
+    }
+    .productlisttitle{
+        font-size: 4rem;
+        margin: 0 150px 50px 200px;
+    }
+    .cartmain{
+        display: flex;
+        justify-content: center;
+    }
+    .cartheader{
+        font-size: 3rem;
+        margin:0;
+    }
+    .carttext{
+        margin-top: 30px;
+        width: auto;
+        font-size: 2rem;
+    }
+    .abouttext{
+
+    }
+    .aboutheader{
+        font-size: 3rem;
+
+    }
+    .aboutcontent{
+        font-size: 2rem;
+    }
+}a
