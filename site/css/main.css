@@ -113,7 +113,6 @@ nav a{
 main{
     display: flex;
     flex-wrap: wrap;
-    align-content: center;
     justify-content: center;
 }
 .productbox{
@@ -176,7 +175,7 @@ main{
 .pricecontainer.frontpage{
     margin-top: 10px;
 }
-.productprice{
+.productprice.medium{
     font-size: 2rem;
 }
 .buybutton.medium{
@@ -203,7 +202,7 @@ main{
 .abouttext{
     width: 80%;
     display: flex;
-
+    
     flex-direction: column;
     
 }
@@ -259,6 +258,11 @@ main{
     flex-direction: column;
     align-items: center;
 }
+.productboxcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 @media only screen  and (min-width : 1224px) {
     body{
         height: 200vh;
@@ -303,24 +307,24 @@ main{
         display: block;
         padding: 10px;
         padding-left: 20px;
-        font-size: 1.3rem;
+        font-size: 2rem;
     }
     .aboutustitle{
         grid-area: aboutus;
         display: block;
         padding: 10px;
         padding-left: 20px;
-        font-size: 1.3rem;
+        font-size: 2rem;
     }
     .cartlink:nth-child(2){
         display: block;
         grid-area: cart;
         padding: 10px;
         padding-left: 20px;
-        font-size: 1.3rem;
         
     }
     .cartlink a{
+        font-size: 2rem;
         margin: 0;
     }
     .knapp{
@@ -331,34 +335,38 @@ main{
         grid-area: products;
         border: none;
         display: flex;
-        padding-top: 40px;
+        padding-top: 60px;
         padding-left: 40px;
     }
     .aboutusmenu{
         grid-area: aboutus;
         border: none;
         display: flex;
-        padding-top: 40px;
+        padding-top: 60px;
         padding-left: 40px;
         
     }
     .menutitle{
         display: block;
         grid-area: menu;
-        font-size: 2rem;
+        font-size: 3rem;
         padding: 20px;
         padding-top: 50px;
         font-weight: bold;
     }
     nav a{
         border: none;
+        font-size: 1.5rem;
     }
     .searchbar{
         grid-area: search;
+        margin-top: 40px;
+    }
+    .searchbutton i.material-icons{ 
+        font-size: 3rem;
     }
     main{
         grid-area: site;
-        margin-top: 40%;
     }
     .productbox{
         margin: 20px;
@@ -381,8 +389,8 @@ main{
         font-size: 1.5rem;
     }
     .productlisttitle{
-        font-size: 4rem;
-        margin: 0 150px 50px 200px;
+        font-size: 5rem;
+        margin: 0 200px 0 200px;
     }
     .cartmain{
         display: flex;
@@ -398,13 +406,60 @@ main{
         font-size: 2rem;
     }
     .abouttext{
-
+        
     }
     .aboutheader{
         font-size: 3rem;
-
+        
     }
     .aboutcontent{
         font-size: 2rem;
     }
-}a
+    .productboxcontainer{
+        margin-top: 20%;
+    }
+    .productpagemain{
+        display: grid;
+        grid-template-columns: 10% 40% 40% 10%;
+        
+        grid-template-areas: 
+        ". productimage productname ."
+        ". productimage productdesc ."
+        ". productimage productdesc ."
+        ". productimage pricecontainer ."
+        ". . . ."
+    }
+    .productimage.large{
+        grid-area: productimage;
+        background-image: url(../img/first_yeeter@W500pxH840px.png);
+        width: 400px;
+        height: 600px;
+    }
+    .pricecontainer{
+        grid-area: pricecontainer;
+    }
+    .productname{
+        grid-area: productname;
+        font-size: 4rem;
+        font-weight: bold;
+        margin: 0;
+    }
+    .productdescription{
+        grid-area: productdesc;
+        font-size: 2rem;
+    }
+    .productprice.medium{
+    }
+    .buybutton.medium{
+        font-size: 4rem;
+        border-radius: 10px;
+        font-size: 3rem; 
+        padding: 20px;
+        height: 58px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        height: 95px;
+    }
+    
+}
