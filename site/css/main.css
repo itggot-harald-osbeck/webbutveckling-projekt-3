@@ -153,8 +153,7 @@ main{
     justify-content: flex-start;
     align-content: flex-start;
     font-size: 2rem;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 20px 0 20px 0;
 }
 .productimage{
     background-color: white;
@@ -195,8 +194,41 @@ main{
     margin-top: 15px;
     width: 80%;
     font-size: 0.9rem;
-    
+    padding-bottom: 50px;
 }
 .productprice.small{
     font-size: 1rem;
+}
+.productlisttitle{
+    font-size: 1.5rem;
+    margin: 10px 0px 10px 0px;
+}
+.aboutmain{
+    widows: 100%;
+    display: flex;
+    justify-content: center;
+}
+.abouttext{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.aboutheader{
+    margin: 20px 0 18px 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.aboutcontent{
+    font-size: 1.2rem;
+    padding-bottom: 50px;
+}
+.cartmain{
+
+}
+.cartheader{
+    margin: 20px 0 18px 0;
+    font-size: 2rem;
+    font-weight: bold;
 }
